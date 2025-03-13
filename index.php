@@ -70,6 +70,13 @@
                                     Op. Aritméticas
                                 </a>
                             </li>
+
+
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=desafio2">
+                                    Desafio
+                                </a>
+                            </li>
                         </ul>
                     </div>   
                 </nav>

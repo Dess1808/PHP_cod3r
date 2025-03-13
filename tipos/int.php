@@ -18,7 +18,7 @@ echo PHP_INT_MIN; echo "<br>";
 //utilizar prefixos com "0" + outro simbilo
 
 //base octal
-echo 011;  echo "<br>";
+echo 0o11;  echo "<br>";
 
 //base binaria
 echo 0b11; echo "<br>";
