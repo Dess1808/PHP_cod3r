@@ -70,11 +70,21 @@
                                     Op. Aritméticas
                                 </a>
                             </li>
-
-
                             <li>
                                 <a href="exercicio.php?dir=tipos&file=desafio2">
                                     Desafio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=string">
+                                    String
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=tipos&file=desafio_string">
+                                    Desafio String
                                 </a>
                             </li>
                         </ul>
