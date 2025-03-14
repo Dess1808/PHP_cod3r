@@ -49,7 +49,7 @@
                         </ul>
                     </div>
 
-                    <div class="modulo vermelho">
+                     <div class="modulo vermelho">
                         <h3>Módulo 2</h3>
                         <ul>
                             <li>
@@ -94,7 +94,43 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>   
+                    </div> 
+                    
+                    <div class="modulo azul">
+                        <h3>Módulo 3</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=variaveis1">
+                                    Variáveis #1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=desafio_equacao">
+                                    Desafio Equação
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=atribuicao">
+                                    Atribuição
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=interpolacao">
+                                    Interpolação
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=variaveis_variaveis">
+                                    Variáveis Variáveis
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
                 </nav>
             </div>
         </main>
