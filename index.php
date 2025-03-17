@@ -143,11 +143,11 @@
                         </ul>
                     </div>  
 
-                    <div class="modulo verde-escuro">
+                    <div class="modulo roxo">
                         <h3>Módulo 4</h3>
                         <ul>
                             <li>
-                                <a href="exercicio.php?dir=variaveis&file=">
+                                <a href="exercicio.php?dir=estruturas_controle&file=">
                                     
                                 </a>
                             </li>
