@@ -129,6 +129,28 @@
                                     Variáveis Variáveis
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=desafio_var_var">
+                                    Desafio Variáveis Variáveis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=valor_vs_referencia">
+                                    Valor vs Referência
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+
+                    <div class="modulo verde-escuro">
+                        <h3>Módulo 4</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=variaveis&file=">
+                                    
+                                </a>
+                            </li>
                         </ul>
                     </div>  
                 </nav>
