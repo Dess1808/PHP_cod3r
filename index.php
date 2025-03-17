@@ -147,8 +147,18 @@
                         <h3>Módulo 4</h3>
                         <ul>
                             <li>
-                                <a href="exercicio.php?dir=estruturas_controle&file=">
-                                    
+                                <a href="exercicio.php?dir=estruturas_controle&file=if_else">
+                                    If/Else
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=op_relacionais">
+                                    Op. Relacionais
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=desafio_pi">
+                                    Desafio PI
                                 </a>
                             </li>
                         </ul>
