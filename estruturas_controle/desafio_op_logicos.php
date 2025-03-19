@@ -37,18 +37,22 @@
 <?php
 echo "<br>";
 
-//valores bool
-$t1 = !!$_POST['t1'];
-$t2 = !!$_POST['t2'];
 
-if ($t1 && $t2) {
-    echo "Comprar TV'50 e tomar sorvete<br>";
-} elseif ($t1 != $t2) {
-    echo "Comprar TV'32 e tomar sorvete<br>";
-} else {
-    echo "ficar em casa e ficar saudavel mais triste sem um TV nova :(<br>";
+//verificando se estão setados
+if (isset($_POST['t1']) && isset($_POST['t2'])){
+    //valores bool
+    $t1 = !!$_POST['t1'];
+    $t2 = !!$_POST['t2'];
+
+    //final test
+    if ($t1 && $t2) {
+        echo "Comprar TV'50 e tomar sorvete<br>";
+    } elseif ($t1 != $t2) {
+        echo "Comprar TV'32 e tomar sorvete<br>";
+    } else {
+        echo "ficar em casa e ficar saudavel mais triste sem um TV nova :(<br>";
+    }
 }
-
 
 
 
