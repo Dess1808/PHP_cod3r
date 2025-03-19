@@ -161,6 +161,24 @@
                                     Desafio PI
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=desafio_pi">
+                                    Desafio PI
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=op_logicos">
+                                    Operadores Lógicos
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=desafio_op_logicos">
+                                    Desafio Operadores Lógicos
+                                </a>
+                            </li>
                         </ul>
                     </div>  
                 </nav>
