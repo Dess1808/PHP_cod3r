@@ -6,6 +6,8 @@
     milha -> km (milhas * 1.60934)
     metro -> km (metro / 1000)
     km -> metro (km * 1000);
+    F -> C = (F-32)/1,8
+    C -> F = 1,8 x °C + 32
 !-->
 
 <form action="#" method="post">
@@ -15,6 +17,8 @@
         <option value="milha-km">milha -> km</option>
         <option value="metro-km">metro -> km</option>
         <option value="km-metro">km -> metro</option>
+        <option value="celsius-fah">Celsius > Fahrenheit</option>
+        <option value="fah-celsius">Fahrenheit > Celsion</option>
     </select>
     <button>Converter</button>
 </form>
@@ -37,6 +41,7 @@ const FATOR_MILHA_KM = 1.60934;
 const FATOR_KM_MILHA = 0.621371;
 const FATOR_METRO_KM_KM_METRO = 1000;
 
+
 if (isset($_POST['valorUnidade'])){
     //converter para inteiro o valor de "valor Unidade"
     $valorUnidade = (int) $_POST['valorUnidade'];
@@ -45,7 +50,7 @@ if (isset($_POST['valorUnidade'])){
     $menssagemAlerta = "Nenhum valor foi inserido";
     $calculo;
 
-    if ($valorUnidade >= 1) {
+    if ($valorUnidade >= 0) {
         switch($conversao){
             case "km-milha":
                 $calculo = FATOR_KM_MILHA * $valorUnidade;
@@ -63,8 +68,17 @@ if (isset($_POST['valorUnidade'])){
                 $calculo = FATOR_METRO_KM_KM_METRO * $valorUnidade;
                 $menssagemSucesso = "$valorUnidade Km(s) = $calculo Metro(s)<br";
                 break;
+            case "celsius-fah":
+                //F -> C = (F-32)/1,8
+                $calculo = ($valorUnidade * (9/5)) + 32;
+                $menssagemSucesso = "{$valorUnidade}º Celsuis = {$calculo}º Fahrenheit<br";
+                break;
+            case "fah-celsius":
+                //1,8 x °C + 32
+                $calculo = ($valorUnidade - 32) / (9/5);
+                $menssagemSucesso = "{$valorUnidade}º Fahrenheit = {$calculo}º Celsius<br";
             default:
-                $menssagemSucesso = "Nenhum valor foi inserido";
+                $menssagemAlerta = "Nenhum valor foi inserido";
         }
 
         echo "<p>$menssagemSucesso</p>";
