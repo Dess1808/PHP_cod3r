@@ -179,6 +179,24 @@
                                     Desafio Operadores Lógicos
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=op_ternario">
+                                    Operador Ternário 
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=switch">
+                                    Switch
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=estruturas_controle&file=desafio_switch">
+                                    Desafio Switch
+                                </a>
+                            </li>
                         </ul>
                     </div>  
                 </nav>
