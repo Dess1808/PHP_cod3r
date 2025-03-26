@@ -199,6 +199,48 @@
                             </li>
                         </ul>
                     </div>  
+
+                    <div class="modulo laranja">
+                        <h3>Módulo 4</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=array">
+                                    Array
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=arrayMap">
+                                    Array - Map
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=desafioMeses">
+                                    Desafio Meses
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=arrayOperacoes">
+                                    Operações com Arrays
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=desafioSorteio">
+                                    Desafio Sorteio
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="exercicio.php?dir=array&file=arrayMulti">
+                                    Array Multidimensioanis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=arrayConstante">
+                                    Array Constantes
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
                 </nav>
             </div>
         </main>
