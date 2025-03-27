@@ -204,7 +204,7 @@
                         <h3>Módulo 4</h3>
                         <ul>
                             <li>
-                                <a href="exercicio.php?dir=array&file=array">
+                                <a href="exercicio.php?dir=repeticoes&file=array">
                                     Array
                                 </a>
                             </li>
@@ -237,6 +237,52 @@
                             <li>
                                 <a href="exercicio.php?dir=array&file=arrayConstante">
                                     Array Constantes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=get">
+                                    $_GET   
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=post">
+                                    $_POST
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=array&file=arrayComparacao">
+                                    Comparação de arrays
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <div class="modulo verde-escuro">
+                        <h3>Módulo 4</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=for">
+                                    For
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=desafioFor">
+                                    Desafio For
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=foreach">
+                                    Foreach
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=breakContinue">
+                                    Break & Continue
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=desafioImpressao">
+                                    Desafio Impressão
                                 </a>
                             </li>
                         </ul>
