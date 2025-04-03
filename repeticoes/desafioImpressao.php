@@ -26,7 +26,7 @@ $array = [
 
 //exemplo com foreach
 foreach($array as $indice => $letter){
-    if (($indice % 2) !== 0){ continue;}
+    if (($indice % 2) !== 0){ continue;} //pulando os pares
     echo $letter;
     echo PHP_EOL . "<br>";
 }
