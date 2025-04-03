@@ -285,6 +285,21 @@
                                     Desafio Impressão
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=doWhileWhile">
+                                        Do While/ While
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=desafioTabela">
+                                        desafioTabela
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=repeticoes&file=desafioTabela2">
+                                    Desafio Tabela 2
+                                </a>
+                            </li>
                         </ul>
                     </div> 
                 </nav>
