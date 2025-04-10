@@ -142,7 +142,6 @@
                             </li>
                         </ul>
                     </div>  
-
                     <div class="modulo roxo">
                         <h3>Módulo 4</h3>
                         <ul>
@@ -256,7 +255,6 @@
                             </li>
                         </ul>
                     </div> 
-
                     <div class="modulo verde-escuro">
                         <h3>Módulo 4</h3>
                         <ul>
@@ -298,6 +296,26 @@
                             <li>
                                 <a href="exercicio.php?dir=repeticoes&file=desafioTabela2">
                                     Desafio Tabela 2
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+                    <div class="modulo vermelho-escuro">
+                        <h3>Módulo 5</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=desafioPalindromo">
+                                    Desafio Palíndromo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=escopo">
+                                    Escopo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=argumentoRetorno">
+                                    Argumento & Retorno
                                 </a>
                             </li>
                         </ul>
