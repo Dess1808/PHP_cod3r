@@ -318,6 +318,31 @@
                                     Argumento & Retorno
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=anonimas">
+                                    Funções Anônimas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=closureCallable">
+                                    Closure & Callable
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=argumentosVariaveis">
+                                    Argumentos Variável
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=argumentoPadrao">
+                                    Argumento Padrão
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=tipos">
+                                    Declarando Tipos
+                                </a>
+                            </li>
                         </ul>
                     </div> 
                 </nav>
