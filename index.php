@@ -343,6 +343,11 @@
                                     Declarando Tipos
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=desafioRecursao">
+                                    Desafio Recursão
+                                </a>
+                            </li>
                         </ul>
                     </div> 
                 </nav>

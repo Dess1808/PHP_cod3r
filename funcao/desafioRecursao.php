@@ -25,7 +25,7 @@ function imprimiRecursivo($array, $countLevel = 1){
             for ($i = 0; $i < $countLevel; $i++)
                 echo ">";
             echo " "; 
-            echo $array[0] . PHP_EOL;
+            echo $array[0] . PHP_EOL . "<br>";
 
             //proximo valor do array, chamda recursiva
             imprimiRecursivo(array_slice($array, 1), $countLevel);
