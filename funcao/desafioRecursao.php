@@ -34,14 +34,14 @@ function imprimiRecursivo($array, $countLevel = 1){
 
             //incremento para o proximo nivel mais interno
             $countLevel += 1;
-            //subarray encontrado, fazer contagem quando
+            //subarray encontrado
             imprimiRecursivo($array[0], $countLevel);
 
-            //passando o array superior
+            //passando o array superior menos o sub array que ja foi desempilhado
             imprimiRecursivo(array_slice($array, 1), $countLevel - 1); //decremento para o nivel anterior
         }
     } else {
-        //quando a array estiver vazia, finalizar recursão
+        //quando a array estiver vazio, finalizar recursão
         return;
     }
 }
@@ -49,4 +49,4 @@ function imprimiRecursivo($array, $countLevel = 1){
 $array = [1, 2, [3, 4, 5], 6, [7, [8, 9]], 10, [1, 2, [3, 4,[5, 6]]]];
 
 //formatar para imprimir no html
-imprimiRecursivo($array);
+imprimiRecursivo($array);   

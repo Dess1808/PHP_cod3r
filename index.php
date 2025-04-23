@@ -200,7 +200,7 @@
                     </div>  
 
                     <div class="modulo laranja">
-                        <h3>Módulo 4</h3>
+                        <h3>Módulo 5</h3>
                         <ul>
                             <li>
                                 <a href="exercicio.php?dir=repeticoes&file=array">
@@ -256,7 +256,7 @@
                         </ul>
                     </div> 
                     <div class="modulo verde-escuro">
-                        <h3>Módulo 4</h3>
+                        <h3>Módulo 6</h3>
                         <ul>
                             <li>
                                 <a href="exercicio.php?dir=repeticoes&file=for">
@@ -301,7 +301,7 @@
                         </ul>
                     </div> 
                     <div class="modulo vermelho-escuro">
-                        <h3>Módulo 5</h3>
+                        <h3>Módulo 7</h3>
                         <ul>
                             <li>
                                 <a href="exercicio.php?dir=funcao&file=desafioPalindromo">
@@ -346,6 +346,16 @@
                             <li>
                                 <a href="exercicio.php?dir=funcao&file=desafioRecursao">
                                     Desafio Recursão
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=retornaFuncao">
+                                    Função que retorna Função
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=funcao&file=mapFilter">
+                                    Map & Filter
                                 </a>
                             </li>
                         </ul>
