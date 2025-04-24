@@ -360,6 +360,22 @@
                             </li>
                         </ul>
                     </div> 
+
+                    <div class="modulo azul-escuro">
+                        <h3>Módulo 8</h3>
+                        <ul>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=classe">
+                                   Classe
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=desafioClasseData">
+                                   Desafio Classe Data
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
                 </nav>
             </div>
         </main>
