@@ -25,7 +25,6 @@ print_r($notasRound2);
 
 //exemplo com filter
 //sem filter 
-
 $aprovados = [];
 foreach($notas as $nota){
     if ($nota >= 7.0)
