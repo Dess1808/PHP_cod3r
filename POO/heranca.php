@@ -1,3 +1,5 @@
+<div class="titulo">Herança</div>
+
 <?php
 
 class Pessoa{
@@ -26,9 +28,8 @@ class Usuario extends Pessoa{
 
     function __construct($nome, $idade, $login){
         $this->login = $login;
-        $this->nome = $nome;
-        $this->idade = $idade;
-        //parent::__construct($nome, $idade); //posso ter garantia que na instacia de usuario, os nome e idade ja estão setados?
+        //estamos simplismente utilizando o construtor da classe pai para inicializar os atributos nome e idade
+        parent::__construct($nome, $idade); 
     }
 
     function __destruct(){

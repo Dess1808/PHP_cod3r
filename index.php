@@ -374,6 +374,46 @@
                                    Desafio Classe Data
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=construtorDestrutor">
+                                   construtor e Destrutor 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=heranca">
+                                   Herança
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=modificadores">
+                                   Modificadores de acesso
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=interface">
+                                   Interface
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=membrosStatic">
+                                   Membros Estaticos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=desafioErro">
+                                   Desafio Erros
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=modificadorFinal">
+                                   Modificador Final
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=traits">
+                                   Traits
+                                </a>
+                            </li>
                         </ul>
                     </div> 
                 </nav>
