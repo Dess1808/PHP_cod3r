@@ -414,6 +414,16 @@
                                    Traits
                                 </a>
                             </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=metodosMagicos">
+                                   Métodos Mágicos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="exercicio.php?dir=POO&file=polimorfismo">
+                                   Polimorfismo
+                                </a>
+                            </li>
                         </ul>
                     </div> 
                 </nav>
