@@ -421,6 +421,21 @@
                     Desafio Require 
                 </a>
             </li>
+             <li>
+                <a href="exercicio.php?dir=include&file=includeVsRequire">
+                    Include vs Require
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=include&file=requireRetorno">
+                    Require Retorno 
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=include&file=includeOnceVsRequireOnce">
+                    Include e Require Once
+                </a>
+            </li>
         </ul>
     </div> 
 </nav>
