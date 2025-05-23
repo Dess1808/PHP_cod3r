@@ -438,4 +438,54 @@
             </li>
         </ul>
     </div> 
+    <div class="modulo laranja-escuro">
+        <h3>Módulo 10</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=namespace&file=basicoNamespace">
+                    O básico de NAMESPACE
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=namespace&file=subnamespace">
+                    Sub-Namespace
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=namespace&file=UseAs">
+                    Use e As
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=namespace/desafioNamespace&file=Instancia">
+                    Desafio Namespace
+                </a>
+            </li>
+        </ul>
+    </div> 
+    <div class="modulo verde">
+        <h3>Módulo 11</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=tryCatch&file=tryCatchBasic">
+                    Básico de Try/Catch
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=tryCatch&file=errosPersonalizados">
+                    Erros Personalizados
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=tryCatch&file=desafiointDiv">
+                    Desafio intdiv
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=tryCatch&file=errorHandler">
+                    Errors Handlers
+                </a>
+            </li>
+        </ul>
+    </div> 
 </nav>
