@@ -488,4 +488,19 @@
             </li>
         </ul>
     </div> 
+    <div class="modulo vermelho">
+        <h3>Módulo 12</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=sessionCookie&file=sessionStart">
+                    Session
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=sessionCookie&file=sessionManager">
+                    Session Manager
+                </a>
+            </li>
+        </ul>
+    </div> 
 </nav>
