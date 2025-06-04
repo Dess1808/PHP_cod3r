@@ -7,10 +7,11 @@ body{
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 60px 1fr 60px; /*um 1fr flexivel, demais estaticos*/
     /*grid-template-columns: 300px 1fr;*/
     grid-template-areas: 
         "cabecalho"
+        "navegacao"
         "principal"
         "rodape";
 }
@@ -38,20 +39,62 @@ body{
     font-size: 1.6rem;
 }
 
+.navegacao{
+    grid-area: navegacao;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
+}
+
+.navegacao > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/*information user and logou */
+.navegacao .username {
+    flex-grow: 1;
+    justify-self: start;
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+/*cores*/
+.navegacao > a.verde{ background-color: #4caf50; }
+.navegacao > a.vermelho { background-color: #f44336; }
+.navegacao > a.azul {background-color: #1867c0; }
+
 .principal{
     grid-area: principal;
-    height: calc(100vh - 180px); /*deixar a box principal mais dinamica*/
+    /*height: calc(100vh - 180px); /*deixar a box principal mais dinamica*/
+    height: calc(100vh - 240px); 
     background-color: #f0f0f0;
     padding: 20px;
 }
 
 .conteudo{
+    font-size: 2rem;
     position: relative;
     height: 100%;
     background-color: #fff;
     overflow-y: scroll; /*barra de rolagem se precisar*/
     padding: 20px;
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+}
+
+.conteudo > .titulo{
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
 }
 
 .rodape{
@@ -110,6 +153,10 @@ body{
 .modulo > ul > li:hover{
     background-color: #eee;
 }
+
+
+/*Login style*/
+
 
 /*Cores*/
 .modulo.verde{ border: 2px solid #4CAF50; }

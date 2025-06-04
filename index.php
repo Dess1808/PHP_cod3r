@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+//check cookie
+if ($_COOKIE['user']){
+    $_SESSION['user'] = $_COOKIE['user'];
+}
+
+//check user
+if (!$_SESSION['user']){
+    header('Location: login.php');
+}
+
+
+
+$user = $_SESSION['user'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,6 +33,10 @@
             <h1>Curso PHP</h1>
             <h2>Índice dos exerícios</h2>
         </header>
+        <nav class="navegacao">
+            <span class="username">User: <?= $user ?></span>
+            <a href="logout.php" class="logout azul">Logout</a>
+        </nav>
         <main class="principal">
             <div class="conteudo">
                 <?php require_once('menu.php');?>
