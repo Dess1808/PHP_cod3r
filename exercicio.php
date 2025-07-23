@@ -35,7 +35,7 @@ $user = $_SESSION['user'];
             <span class="username">user: <?= $user ?></span>
 
             <a href="logout.php" class="azul">logout</a>
-            <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php"; ?> class="verde">sem formatação</a>
+            <a href=<?= "/PHP_cod3r/{$_GET['dir']}/{$_GET['file']}.php"; ?> class="verde">sem formatação</a>
             <a href="index.php" class="vermelho">voltar</a>
         </nav>
         <main class="principal">
