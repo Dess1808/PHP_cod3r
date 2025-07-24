@@ -503,4 +503,34 @@
             </li>
         </ul>
     </div> 
+    <div class="modulo azul">
+        <h3>Módulo 13</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=dates&file=date">
+                    Date
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=dates&file=date2">
+                    Date 2
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=dates&file=fwrite">
+                    fwrite 
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=dates&file=readFiles">
+                    read files
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=dates&file=upload">
+                    upload files
+                </a>
+            </li>
+        </ul>
+    </div> 
 </nav>
