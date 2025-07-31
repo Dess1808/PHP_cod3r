@@ -531,6 +531,11 @@
                     upload files
                 </a>
             </li>
+            <li>
+                <a href="exercicio.php?dir=dates&file=download">
+                    Download files
+                </a>
+            </li>
         </ul>
     </div> 
 </nav>
