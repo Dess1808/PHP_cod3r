@@ -1,6 +1,8 @@
 <?php
+$array = [];
 
-//nao funciona 
-echo __DIR__;
+$array['name'] = "Gabriel";
+$array['lastName'] = "Souza Martins";
 
+print_r($array);
 
