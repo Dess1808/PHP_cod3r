@@ -548,4 +548,44 @@
             </li>
         </ul>
     </div> 
+    <div class="modulo laranja">
+        <h3>Módulo 15</h3>
+        <ul>
+             <li>
+                <a href="exercicio.php?dir=db&file=connection">
+                    Connection
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=db&file=createDataBase">
+                    Create Database
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=createTable">
+                    Create table
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=insert">
+                    Insert
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=query">
+                    Query
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=db&file=delete">
+                    Delete
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=insertForm">
+                    Insert By Form
+                </a>
+            </li>
+        </ul>
+    </div> 
 </nav>
