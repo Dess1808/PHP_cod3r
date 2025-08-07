@@ -14,19 +14,20 @@
 */
 
 if ($_POST){
+    $datas = $_POST;
     $errorForm = [];
 
-    //name
-    if (!filter_input(INPUT_POST, "name")){
+     //name
+    if (trim($datas['name']) === ""){
         $errorForm['name'] = "Name not inserted";
     }
 
     //birth
-    if (!filter_input(INPUT_POST, "birth")){
+    if (!isset($datas['birth'])){
         $errorForm['birth'] = "Birth not inserted";
     } else {
-        $birthFormated = DateTime::createFromFormat('d/m/Y', $_POST['birth']);
-        if (!$birthFormated){
+        $birthFormated = DateTime::createFromFormat('d/m/y', $datas['birth']);
+        if ($birthFormated){
             $errorForm['birth'] = "format correct - d/m/Y";
         }
     }
@@ -35,7 +36,7 @@ if ($_POST){
     if (!filter_input(INPUT_POST, "email")){
     $errorForm['email'] = "Email is not inserted"; 
     } else {
-        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        if (!filter_var($datas['email'], FILTER_VALIDATE_EMAIL)){
             $errorForm['email'] = "Email is not valid";
         }
     }
@@ -44,7 +45,7 @@ if ($_POST){
     if (!filter_input(INPUT_POST, "site")){
     $errorForm['site'] = "Site is not inserted"; 
     } else {
-        if (!filter_var($_POST['site'], FILTER_VALIDATE_URL)){
+        if (!filter_var($datas['site'], FILTER_VALIDATE_URL)){
             $errorForm['site'] = "Site is not valid";
         }
     }
@@ -57,11 +58,11 @@ if ($_POST){
         ]
     ];
 
-    if (!filter_input(INPUT_POST, "children") && $_POST['children'] != 0){
+    if (!filter_input(INPUT_POST, "children") && $datas['children'] != 0){
         $errorForm['children'] = "the number(s) of children is not inserted";
     } else {
-        if (!filter_var($_POST['children'], FILTER_VALIDATE_INT, $configChildren) && 
-        $_POST['children'] != 0){
+        if (!filter_var($datas['children'], FILTER_VALIDATE_INT, $configChildren) && 
+        $datas['children'] != 0){
             $errorForm['children'] = "Number of children is invalid (0 - 20)";
         }
     }
@@ -76,7 +77,7 @@ if ($_POST){
     if (!filter_input(INPUT_POST, "salary")){
         $errorForm['salary'] = "value is not inserted";
     } else {
-        if (!filter_var($_POST['salary'], FILTER_VALIDATE_FLOAT, $configSalary)){
+        if (!filter_var($datas['salary'], FILTER_VALIDATE_FLOAT, $configSalary)){
             $errorForm['salary'] = "Salary invalid, error decimal point";
         }
     }
@@ -88,9 +89,10 @@ if ($_POST){
     <div class="row">
         <!--Name-->
         <div class="col-md-9">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-control <?= $errorForm['name'] ? 'is-invalid' : ''?>" 
-            type="text" id="name" name="name" placeholder="Name">
+            <utlabel class="form-label" for="name">Name</label>
+            <inp class="form-control <?= $errorForm['name'] ? 'is-invalid' : ''?>" 
+            type="text" id="name" name="name" placeholder="Name"
+            value="<?=isset($datas['name']) ? $datas['name'] : ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['name']?>
             </div>
@@ -99,7 +101,8 @@ if ($_POST){
             <!--Birth-->
             <label class="form-label" for="name">Birth</label>
             <input class="form-control <?= $errorForm['birth'] ? 'is-invalid' : ''?>" 
-            type="text" id="birth" name="birth" placeholder="Birth">
+            type="text" id="birth" name="birth" placeholder="Birth"
+            value="<?=isset($datas['birth']) ? $datas['birth'] : ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['birth']?>
             </div>
@@ -110,7 +113,8 @@ if ($_POST){
         <div class="col-md-6">
             <!--Email-->
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control <?= $errorForm['email'] ? 'is-invalid' : ''?>" id="email" name="email" placeholder="Email">
+            <input type="email" class="form-control <?= $errorForm['email'] ? 'is-invalid' : ''?>" id="email" name="email" 
+            placeholder="Email" value="<?=isset($datas['email']) ? $datas['email'] : ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['email']?>
             </div>
@@ -118,7 +122,8 @@ if ($_POST){
         <div class="col-md-6">
             <!--Site-->
             <label for="site" class="form-label">Site</label>
-            <input type="text" class="form-control <?= $errorForm['site'] ? 'is-invalid' : ''?>" id="site" name="site" placeholder="Site">
+            <input type="text" class="form-control <?= $errorForm['site'] ? 'is-invalid' : ''?>" id="site" name="site" 
+            placeholder="Site" value="<?=isset($datas['site']) ? $datas['site'] : ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['site']?>
             </div>
@@ -131,7 +136,7 @@ if ($_POST){
             <!--Children-->
             <label for="children" class="form-label">Children</label>
             <input type="number" class="form-control <?= $errorForm['children'] ? 'is-invalid' : ''?>" id="children" name="children" 
-            placeholder="children">
+            placeholder="children" value="<?=isset($datas['children']) ? $datas['children'] : ''?>"> 
             <div class="invalid-feedback">
                 <?=$errorForm['children']?>
             </div>
@@ -140,7 +145,8 @@ if ($_POST){
         <div class="col-md-6">
             <!--salary-->
             <label for="salary" class="form-label">Salary</label>
-            <input type="text" class="form-control <?= $errorForm['salary'] ? 'is-invalid' : ''?>" id="salary" name="salary" placeholder="Salary">
+            <input type="text" class="form-control <?= $errorForm['salary'] ? 'is-invalid' : ''?>" id="salary" name="salary" 
+            placeholder="Salary" value="<?=isset($datas['salary']) ? $datas['salary'] : ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['salary']?>
             </div>  
