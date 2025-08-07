@@ -586,6 +586,11 @@
                     Insert By Form
                 </a>
             </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=updateForm">
+                    update By Form
+                </a>
+            </li>
         </ul>
     </div> 
 </nav>
