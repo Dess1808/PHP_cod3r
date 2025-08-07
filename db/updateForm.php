@@ -2,8 +2,17 @@
 <div class="titulo">Update by Form</div>
 
 <?php
+ini_set("display_errors", 1);
 
-//validation
+//validation and inserto database
+//print_r($_POST);
+
+/*
+    Obs: bug no post, se fizer reload, o ultimo form armazenado no post
+    e inserido no banco, mesmo com o unset feito no final do procedimento de insercao no banco 
+    como superglobal, o post deve funcionar de um jeito diferentes talvez!
+*/
+
 if($_POST){
     $datas = $_POST;
     $errorForm = [];
@@ -73,7 +82,53 @@ if($_POST){
         }
     }
 
+
+    //insert on dabase
+    if (!$errorForm){
+
+        //connection
+        require_once "connection.php";
+        $connection = newConnection('course_php');
+
+        $stmt = $connection->prepare(
+            "INSERT INTO register(
+                name, 
+                birth, 
+                email, 
+                site, 
+                children, 
+                salary) VALUE (?, ?, ?, ?, ?, ?);" 
+            );
+        
+        //paramters
+        $parameters = [
+            $datas['name'],
+            $birthFormated->format('Y-m-d'),
+            $datas['email'],
+            $datas['site'],
+            $datas['children'],
+            $datas['salary']
+        ];
+
+        //bind
+        $stmt->bind_param("ssssid", ...$parameters);
+        
+        //execute 
+        if (!$stmt->execute()){
+            echo "Error: " . $stmt->error . "<br>";
+        } else {
+            echo "Successfully registered" . "<br>";
+            unset($datas);
+        }
+
+        $connection->close();
+    }
+
+    //Query - to list datas 
+    
 }
+
+
 
 ?>
 
