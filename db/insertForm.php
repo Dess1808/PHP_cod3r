@@ -3,7 +3,7 @@
 <div class="titulo">Insert By form</div>
 
 <?php
-//ini_set("display_errors", 1);
+ini_set("display_errors", 1);
 
 //verificar detalhe do formulario depois de envio, php acusa erro sem sentido!
 
@@ -107,6 +107,7 @@ if ($_POST){
         $connection->close();
     }
 }
+
 ?>
 
 <form action="#" method="POST">
@@ -115,8 +116,8 @@ if ($_POST){
         <div class="col-md-9">
             <label class="form-label" for="name">Name</label>
             <input class="form-control <?= $errorForm['name'] ? 'is-invalid' : ''?>" 
-            type="text" id="name" name="name" placeholder="Name" 
-            value="<?php if (isset($datas['name'])){ echo $datas['name']; } ?>">
+            type="text" id="name" name="name" placeholder="Name"
+            value="<?= isset($datas['name']) ? $datas['name']: ''?>">
             <div class="invalid-feedback">
                 <?=$errorForm['name']?>
             </div>
