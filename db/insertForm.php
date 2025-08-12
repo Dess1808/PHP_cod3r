@@ -95,7 +95,7 @@ if ($_POST){
             $datas['email'],
             $datas['site'],
             $datas['children'],
-            $datas['salary']
+            $datas['salary'] ? str_replace(",", ".", $datas['salary']) : null
         ];
 
         $stmt->bind_param("ssssid", ...$param);
