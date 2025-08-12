@@ -9,9 +9,7 @@ function newConnection($database){
     $connection = new mysqli($localhost, $user, $password, $database);
 
     //errors
-    if (!$connection->connect_error){
-        echo "Connection Success" . "<br>";
-    } else {
+    if ($connection->connect_error){
         echo "Error: " . $connection->connect_error;
     }
 
