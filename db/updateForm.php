@@ -13,6 +13,32 @@ ini_set("display_errors", 1);
     como superglobal, o post deve funcionar de um jeito diferentes talvez!
 */
 
+//get code
+if (isset($_GET['code'])){
+    require_once 'connection.php';
+    $connection = newConnection('course_php');
+
+    $stmt = $connection->prepare('SELECT * FROM register WHERE id = ?');
+    $stmt->bind_param("i", $_GET['code']);
+
+
+    if ($stmt->execute()){
+        $result = $stmt->get_result();
+        
+        if ($result->num_rows > 0){
+            $datas = $result->fetch_assoc();
+            if ($datas['birth']){
+                $dt = new DateTime($datas['birth']);
+                $datas['birth'] = $dt->format('d/m/Y');
+            }
+
+            if ($datas['salary']){
+                $datas['salary'] = str_replace(".", ",", $datas['salary']);
+            }
+        }
+    }
+}
+
 if($_POST){
     $datas = $_POST;
     $errorForm = [];
@@ -85,19 +111,18 @@ if($_POST){
 
     //insert on dabase
     if (!$errorForm){
-
         //connection
         require_once "connection.php";
         $connection = newConnection('course_php');
 
         $stmt = $connection->prepare(
-            "INSERT INTO register(
-                name, 
-                birth, 
-                email, 
-                site, 
-                children, 
-                salary) VALUE (?, ?, ?, ?, ?, ?);" 
+            "UPDATE register SET
+                name = ?, 
+                birth = ?, 
+                email = ?, 
+                site = ?, 
+                children = ?, 
+                salary = ? WHERE id = ?;" 
             );
         
         //paramters
@@ -107,11 +132,12 @@ if($_POST){
             $datas['email'],
             $datas['site'],
             $datas['children'],
-            $datas['salary']
+            $datas['salary'] ? str_replace(",", ".", $datas['salary']) : null,
+            $datas['id']
         ];
 
         //bind
-        $stmt->bind_param("ssssid", ...$parameters);
+        $stmt->bind_param("ssssidi", ...$parameters);
         
         //execute 
         if (!$stmt->execute()){
@@ -123,16 +149,26 @@ if($_POST){
 
         $connection->close();
     }
-
-    //Query - to list datas 
-
 }
-
-
-
 ?>
 
+<!--Code-->
+<form action="/PHP_cod3r/exercicio.php" method="GET" style="margin-top:20px;">
+    <input type="hidden" name="dir" value="db">
+    <input type="hidden" name="file" value="updateForm">
+    
+    <div class="row">
+        <div class="col-sm-2">
+            <input  class="form-control" type="number" name="code" placeholder="Insert Code">
+        </div>
+        <div class="col-sm-5">
+            <button class="btn btn-secondary mb-4">Search</button>
+        </div>
+    </div>
+</form>
+
 <form action="#" method="POST">
+    <input type="hidden" name="id" value="<?= isset($datas['id']) ? $datas['id'] : '' ?>">
     <div class="row">
         <!--Name-->
         <div class="col-md-9">
