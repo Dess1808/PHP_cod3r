@@ -591,6 +591,31 @@
                     update By Form
                 </a>
             </li>
+            <li>
+                <a href="exercicio.php?dir=db/PDO&file=connectionPdo">
+                    PDO: connection
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=db/PDO&file=insertPdo">
+                    PDO: Insert
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db/PDO&file=searchPdo">
+                    PDO: Search
+                </a>
+            </li>
+             <li>
+                <a href="exercicio.php?dir=db/PDO&file=deletePdo">
+                    PDO: Delete
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db/PDO&file=updatePdo">
+                    PDO: Update
+                </a>
+            </li>
         </ul>
     </div> 
 </nav>
